@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+ <siteMapNode url="" title="Admin"  description="Administration">
+        <siteMapNode url="~/admin.aspx" title="Admin"  description="Administration">
+            <siteMapNode url="~/admin/AddStudent.aspx" title="ADD Student"/>
+            <siteMapNode url="~/admin/AddUser.aspx" title="Manage User"/>
+            <siteMapNode url="~/admin/ManageFaculty.aspx" title="Manage Employee"/>
+            <siteMapNode url="~/admin/Program.aspx" title="Create Programs"/>
+            <siteMapNode url="~/admin/EditProgram.aspx" title="Edit Programs"/>
+            <siteMapNode url="~/admin/Subject.aspx" title="Add Subjects"/>        
+            <siteMapNode url="~/admin/SubjectTeach.aspx" title="Manage Subject Teach by Whom"/>       
+            <siteMapNode url="~/admin/SubjectAllocation.aspx" title="Manage Allocation of Subject to Student"/>
+         </siteMapNode>
+     <siteMapNode url="~/admdin.aspx" title="Admin"  description="Administration">
+         <siteMapNode url="~/addmin/AddStudent.aspx" title="ADDd Stdudent"/>
+         <siteMapNode url="~/admdin/AddUser.aspx" title="Managde User"/>
+         <siteMapNode url="~/admdin/ManageFaculty.aspx" title="Manadge Employee"/>
+         <siteMapNode url="~/admdin/Program.aspx" title="Create Prdograms"/>
+         <siteMapNode url="~/admdin/EditProgram.aspx" title="Edit Pdrograms"/>
+         <siteMapNode url="~/admddin/Subject.aspx" title="Add Subjecdts"/>
+         <siteMapNode url="~/admidn/SubjectTeach.aspx" title="Manage Subddject Teach by Whom"/>
+         <siteMapNode url="~/admidn/SubjectAllocation.aspx" title="Manage Allocadtion of Subject to Student"/>
+     </siteMapNode>
+</siteMapNode>
+    
+</siteMap>

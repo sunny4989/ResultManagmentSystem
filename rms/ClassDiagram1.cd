@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="rms.AddFaculty" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAACCAAAAAAAABAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>admin\AddFaculty.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.AddProgram" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAEAAAAABCAAAEAAAAAIAAAA=</HashCode>
+      <FileName>admin\AddProgram.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.AddStudent" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAABEIAgAAAAAAAAAAABBAEAAMIBIEAKABAA=</HashCode>
+      <FileName>admin\AddStudent.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.AddSubject" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAACAAAAAAAAABAAAAACAAAAIAAAA=</HashCode>
+      <FileName>admin\AddSubject.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.AddUser" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAARAAgAAAAAAAiAAAAgAQABIAAAICQBABIAAEA=</HashCode>
+      <FileName>admin\AddUser.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.ChangePassword" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgQAAAAAAAAAAAAAAAAAAEoBAABAAAAAAAAIAJAAAA=</HashCode>
+      <FileName>admin\ChangePassword.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.DeleteUser" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQAAAACAAAAAAAAAAAAAAAAARAAAAAAAgAAIAAAA=</HashCode>
+      <FileName>admin\DeleteUser.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.EditFaculty" Collapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAgAAAAAAAAABAAAAAEAAAAIAAAA=</HashCode>
+      <FileName>admin\EditFaculty.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.EditProgram1" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>admin\EditProgram.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.EditStudent" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAEAEAAAAAAAAAAAAAAgAABAEBBAAAAAQIQAgA=</HashCode>
+      <FileName>admin\EditStudent.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.EditSubject" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAABAAAAACAAAAIAAAA=</HashCode>
+      <FileName>admin\EditSubject.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.SubjectAllocation" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAICICABACAIAAAIBEAAggAEDAJQUQBEAIAQAYAAAo=</HashCode>
+      <FileName>admin\SubjectAllocation.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.SubjectTeach" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAHAAICEBAEAAAMFEEEBCCAACAAAAIIAEAA=</HashCode>
+      <FileName>admin\SubjectTeach.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.admin" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>admin.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.basic" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAKAAAAAQAAAgAAAYACgAADIIAAACSAAAQCAAIQCEA=</HashCode>
+      <FileName>basic.Master.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.ConnectionManager" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataAccessCode\ConnectionManager.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.UniversityDataAccess" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACACBBAAAAAAAAAzAIICAEgAAAgAQAgBACEIABAAIA=</HashCode>
+      <FileName>DataAccessCode\UniversityDataAccess.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.ResultManager" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAACCIKAgCAAOUEAABATBSBABAUAAQMoACAKAACs=</HashCode>
+      <FileName>faculty\ResultManager.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.Faculty" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Faculty.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.Global_asax" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAAAAAAECIBQAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.SemesterResult" Collapsed="true">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAIAAAAAAgAAAARQAABAEAAAAIAAAg=</HashCode>
+      <FileName>Guest\SemesterResult.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.StudentResult" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAQAAAIIAAAAAAAAAABAAIBwAAgAAIAAAE=</HashCode>
+      <FileName>Guest\StudentResult.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.Home" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Home.aspx.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.My.MyApplication" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>My Project\MyExtensions\MyWebExtension.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="rms.My.MySettings" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="rms.My.MyWebExtension" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAAABBAAEgAEAAAAAAAAAgBgBAAAAgAAAAAAAA=</HashCode>
+      <FileName>My Project\MyExtensions\MyWebExtension.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="rms.My.MySettingsProperty" Collapsed="true">
+    <Position X="1.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="rms.My.Resources.Resources" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

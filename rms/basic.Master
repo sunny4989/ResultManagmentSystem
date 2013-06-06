@@ -1,0 +1,276 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="~/basic.Master.vb" Inherits="rms.basic" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>RESULT MANAGMENT SYSTEM </title>
+    <style type="text/css">
+        /*<![CDATA[*/
+        .max_width
+        {
+            margin: 0 auto;
+      
+        }
+        .style1
+        {
+            color: #333333;
+            text-decoration: none;
+        }
+        .dropbox
+        {
+            width: 160px !important;
+        }
+        .DropBox
+        {
+            width: 160px !important;
+        }
+        .hidden
+        {
+            display: none;
+        }
+        .feedback
+        {
+            font-size: large;
+            color: Green;
+        }
+        
+        
+        
+        /*]]>*/
+    </style>
+    <style type="text/css">
+        /*<![CDATA[*/
+        div.c8
+        {
+            color: White;
+            background-color: #308496;
+            color: White;
+        }
+        table.c7
+        {
+            width: auto auto auto;
+            height: 377px;
+        }
+       
+        td.c5
+        {
+            background-color: #FBF9F4;
+            width: 254px;
+        }
+        div.c4
+        {
+            background-color: #FFC6AA;
+        }
+        table.c3
+        {
+            width: 100%;
+            background-color: #308496;
+        }
+        td.c2
+        {
+            width: 717px;
+        }
+        h1.c1
+        {
+            margin-left: 58px;
+            color: White;
+        }
+        
+        /*]]>*/
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div class="max_width">
+        <hr />
+        <table class="c3">
+            <tr>
+                <td class="style8">
+                    <a href="HTTP://WWW.OPEN_GEEKS.COM" target="_blank" class="style1">Open_Geek++</a>
+                    <h1 class="c1">
+                        RESULT MANAGMENT SYSTEM
+                    </h1>
+                    <br />
+                </td>
+                <td valign="top">
+                    <asp:Panel ID="loggedInPanel" runat="server">
+                        <asp:Label ID="HeadHs" runat="server" Text="Welcome Guest"></asp:Label>
+                        <asp:LinkButton ID="LogoutButton" runat="server" CausesValidation="False" 
+                            style="color: #660033">Logout</asp:LinkButton>
+                    </asp:Panel>
+                    <asp:Label ID="ErrorMessage1" runat="server" ForeColor="Red" Style="float: right;
+                        clear: both;"></asp:Label>
+                    <asp:Panel ID="LogInPanel" runat="server">
+                        <table style="float: right">
+                            <tr>
+                                <td>
+                                    Username :
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="UsernameTexbox" runat="server" MaxLength="26" ValidationGroup="LogIn"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="UserNameRequiredFieldValidator" runat="server" ControlToValidate="UsernameTexbox"
+                                        ErrorMessage="Error" ForeColor="Red" ValidationGroup="LogIn"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Password :
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="PasswdTexbox" runat="server" TextMode="Password" ValidationGroup="LogIn"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="UserNameRequiredFieldValidator0" runat="server" ControlToValidate="PasswdTexbox"
+                                        ErrorMessage="Error" ForeColor="Red" ValidationGroup="LogIn"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td colspan="2">
+                                    <asp:Button ID="loginButton" runat="server" Text="Login" ValidationGroup="LogIn"
+                                        Width="78px" />
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <asp:LinkButton ID="ForgotButton" runat="server" Style="color: #626262">Forgot Password?</asp:LinkButton>
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="max_width c4">
+        <hr />
+        <asp:Menu ID="Menu1" runat="server" Font-Names="Verdana" Font-Size="14px" ForeColor="#666666"
+            StaticSubMenuIndent="10px" DynamicVerticalOffset="2" Orientation="Horizontal"
+            ItemWrap="True">
+            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#E3EAEB" />
+            <DynamicSelectedStyle BackColor="#1C5E55" />
+            <DynamicItemTemplate>
+                <%# Eval("Text") %>
+            </DynamicItemTemplate>
+            <Items>
+                <asp:MenuItem Text="Home" ToolTip="Visit home page" Value="Home" NavigateUrl="~/Home.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Semester Result" NavigateUrl="~/Guest/SemesterResult.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Student Result" Value="Student Result" 
+                    NavigateUrl="~/Guest/StudentResult.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/aboutUs.aspx" Text="About Us" Value="About Us">
+                </asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#FC9987" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#CC99FF" Font-Bold="True" BorderStyle="Ridge" />
+            <StaticItemTemplate>
+                <%# Eval("Text") %>
+            </StaticItemTemplate>
+        </asp:Menu>
+        <hr />
+        You are here:<asp:SiteMapPath ID="SiteMapPath1" runat="server" 
+            style="color: #660033">
+        </asp:SiteMapPath>
+    </div>
+    <div class="max_width">
+        <table class="c7">
+            <tr>
+                <td valign="top" class="c5" style="width: 166px; background-color: #D5FFD5;">
+                    <asp:TreeView ID="AdminTree" runat="server" Style="margin-right: 69px" 
+                        LineImagesFolder="~/TreeLineImages" NodeIndent="10" ShowExpandCollapse="False">
+                        <HoverNodeStyle Font-Bold="True" ForeColor="#5555DD" Font-Underline="True" />
+                        <Nodes>
+                            <asp:TreeNode NavigateUrl="~/admin.aspx" Text="Admin Home" Value="Admin Home">
+                                <asp:TreeNode Text="Accounts" Value="Manage Accounts">
+                                    <asp:TreeNode NavigateUrl="~/admin/AddUser.aspx" Text="New User" Value="New User">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/ChangePassword.aspx" Text="Reset Password" Value="Reset Password">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/DeleteUser.aspx" Text="Delete User" Value="Delete User">
+                                    </asp:TreeNode>
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Students" Value="Students">
+                                    <asp:TreeNode NavigateUrl="~/admin/AddStudent.aspx" Text="Add new Student" Value="Add new Student">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/EditStudent.aspx" Text="Edit Student" Value="Edit Student">
+                                    </asp:TreeNode>
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Faculty" Value="Manage Faculty">
+                                    <asp:TreeNode NavigateUrl="~/admin/AddFaculty.aspx" Text="Add new Faculty" Value="Add new Faculty">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/EditFaculty.aspx" Text="Edit Faculty Details"
+                                        Value="Edit Faculty Details"></asp:TreeNode>
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Departments" Value="Manage Programs offered">
+                                    <asp:TreeNode NavigateUrl="~/admin/AddProgram.aspx" Text="Add Department" Value="Add new program">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/EditProgram.aspx" Text="Edit Department" Value="Edit Programs">
+                                    </asp:TreeNode>
+                                </asp:TreeNode>
+                                <asp:TreeNode Text="Subjects" Value="Manage Subjects">
+                                    <asp:TreeNode NavigateUrl="~/admin/AddSubject.aspx" Text="Add Subject" Value="New Node">
+                                    </asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/SubjectAllocation.aspx" Text="Subject Allocation"
+                                        Value="Subject Allocation"></asp:TreeNode>
+                                    <asp:TreeNode NavigateUrl="~/admin/SubjectTeach.aspx" Text="Assign Subjects" Value="Assign Subjects">
+                                    </asp:TreeNode>
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px"
+                            NodeSpacing="0px" VerticalPadding="0px" />
+                        <ParentNodeStyle Font-Bold="False" />
+                        <RootNodeStyle Font-Bold="True" Font-Underline="True" />
+                        <SelectedNodeStyle Font-Bold="True" Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+                            VerticalPadding="0px" />
+                    </asp:TreeView>
+                    <asp:TreeView ID="FacultyTreeView" runat="server" Style="margin-right: 69px" LineImagesFolder="~/TreeLineImages"
+                        NodeIndent="10" ShowExpandCollapse="False">
+                        <HoverNodeStyle Font-Bold="True" ForeColor="#5555DD" Font-Underline="True" />
+                        <Nodes>
+                            <asp:TreeNode NavigateUrl="~/Faculty.aspx" Text="Faculty Home" Value="Home">
+                                <asp:TreeNode NavigateUrl="~/faculty/ResultManager.aspx" Text="Manage Result" Value="Manage Result">
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px"
+                            NodeSpacing="0px" VerticalPadding="0px" />
+                        <ParentNodeStyle Font-Bold="False" />
+                        <RootNodeStyle Font-Bold="True" Font-Underline="True" />
+                        <SelectedNodeStyle Font-Bold="True" Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+                            VerticalPadding="0px" />
+                    </asp:TreeView>
+                </td>
+                <td valign="top" class="c6">
+                    <asp:Label ID="MasterFeedbackMsg" runat="server" Text="" Style="text-align: center"></asp:Label>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr />
+    <div class="max_width c8">
+        Created By:-- 2008ECS Batch<br />
+        In Presance of: : Mr.N.Gondhi
+    </div>
+    <hr  />
+    </form>
+</body>
+</html>
